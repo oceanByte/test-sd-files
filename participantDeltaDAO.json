@@ -1,0 +1,93 @@
+{
+  "selfDescriptionCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "http://w3id.org/gaia-x/participant",
+      "https://registry.gaia-x.eu/v2206/api/shape/files?file=participant&type=jsonld"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "LegalPerson"
+    ],
+    "id": "https://delta-dao.com/.well-known/participantDeltaDAO.json",
+    "issuer": "did:web:delta-dao.com",
+    "issuanceDate": "2022-09-23T23:23:23.235Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "gx-participant:legalName": "deltaDAO AG",
+      "gx-participant:website": "https://delta-dao.com",
+      "gx-participant:registrationNumber": [
+        {
+          "gx-participant:registrationNumberType": "leiCode",
+          "gx-participant:registrationNumberNumber": "391200FJBNU0YW987L26"
+        },
+        {
+          "gx-participant:registrationNumberType": "EUID",
+          "gx-participant:registrationNumberNumber": "DEK1101R.HRB170364"
+        }
+      ],
+      "gx-participant:blockchainAccountId": [
+        {
+          "gx-participant:blockchainAccountId": "0x4C84a36fCDb7Bc750294A7f3B5ad5CA8F74C4A52"
+        },
+        {
+          "gx-participant:blockchainAccountId": "0x2859d961a6dBa6e7d30b2d383Af468edb4E7F4f6"
+        },
+        {
+          "gx-participant:blockchainAccountId": "0xaBaf56FC1bB6b4FF9fA4378C3C8723d2B2444324"
+        },
+        {
+          "gx-participant:blockchainAccountId": "0x68C24FA5b2319C81b34f248d1f928601D2E5246B"
+        },
+        {
+          "gx-participant:blockchainAccountId": "0xa76Fa6837A6ffc9F123F2193717A5965c68B0cbA"
+        }
+      ],
+      "gx-participant:headquarterAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-HH",
+        "gx-participant:streetAddress": "Geibelstraße 46b",
+        "gx-participant:postalCode": "22303",
+        "gx-participant:locality": "Hamburg"
+      },
+      "gx-participant:legalAddress": {
+        "gx-participant:addressCountryCode": "DE",
+        "gx-participant:addressCode": "DE-HH",
+        "gx-participant:streetAddress": "Geibelstraße 46b",
+        "gx-participant:postalCode": "22303",
+        "gx-participant:locality": "Hamburg"
+      },
+      "gx-participant:termsAndConditions": "70c1d713215f95191a11d38fe2341faed27d19e083917bc8732ca4fea4976700"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-25T16:53:58.424Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:compliance.gaia-x.eu",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..t_aekuoK49d_NoVD0xUE-U9updu5ubDNiqhqHvlYx-dggjI4wflAjZ5fjCBw9QP4xsSIL1gsxbwlhEBH4VrNoOtNtQrpWM63Bg2iSLdrTvEe4kd7vLcqWNctIiGYE5UN0phbKhE7WKGYSndKErmDIBzbFBV8qaqVKUfuGQsQHM7SXUuksif9QlwFWsFICPLyJ8bz32Nwk-Cq6Dh31Xf5KRvQfOXVcCU3vT5jDZEk8_kEd89KSjmX_Q-vsEKzYRl35U2Yw84hiSY5Scr7bJTaIJl6bhgk9N6GjmLLZqP2CJd8MfBy_KDyOSP6WpHWd0uZ_aUBjMrnoP7aVSklP1rF8A"
+    }
+  },
+  "complianceCredential": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ParticipantCredential"
+    ],
+    "id": "https://catalogue.gaia-x.eu/credentials/ParticipantCredential/1664124841975",
+    "issuer": "did:web:compliance.lab.gaia-x.eu",
+    "issuanceDate": "2022-09-25T16:54:01.975Z",
+    "credentialSubject": {
+      "id": "did:web:delta-dao.com",
+      "hash": "1dbbde689c0d04bd9f87fc7deca99e82d7ee22afdbd2cea1914087fd91591f21"
+    },
+    "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2022-09-25T16:54:01.975Z",
+      "proofPurpose": "assertionMethod",
+      "jws": "eyJhbGciOiJQUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iW8LLyaAb_EybYhEP4-dp5_nIqPzpUItbhcmKm_BB5zldgr9ORniZImfvGtuqHdWNY3cYMd2A1dazYay21aUtjwveeocvu9Scg5nBgtLZe0CUq9nEALrxBkmy7sIeudWFCdY7BOK1jQFgusjk1LWAFlvsCIMuFr1f5C0x71nouKceU9IPvzIIHeKAxSOZmEskfypgvAf8iKj8lWLYmZrSK8KaM9JZnNtYPzjevQXw4rrbn4zOyeiLg-k0FfOEVjp8qsHh_Ge22sn8o5HI8VVSJLVZbB-pJzc3rZ7k1JKkAJXys9BbjwIIlFfrwGKBWPsbUAWzTTBu7nmxVIIrfaUvw",
+      "verificationMethod": "did:web:compliance.lab.gaia-x.eu"
+    }
+  }
+}
